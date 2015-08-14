@@ -2,7 +2,7 @@
 
     class RepeatCounter
     {
-        function wordCount($search_word, $search_text)
+        function countRepeats($search_word, $search_text)
         {
             // convert to lower-case
             $lower_search_word = strtolower($search_word);
