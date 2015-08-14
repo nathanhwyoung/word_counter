@@ -46,7 +46,7 @@ OUTPUT
 DESCRIPTION
 This pair of input values is the most complex variation of the requirements.
 
-verify single word input
+
 
 BEHAVIOR
 Receives a paragraph with commas and periods. Removes those characters, so that
@@ -60,3 +60,15 @@ OUTPUT
 
 DESCRIPTION
 This pair of input values searches for two words, who both have either a comma or period after them. The test fails if they are not removed, and passes if they are removed.
+
+
+BEHAVIOR
+Verifies that the string to be searched for is a single word
+
+INPUT
+"Hello, goodbye"
+
+OUTPUT
+"Please enter only one word"
+
+DESCRIPTION

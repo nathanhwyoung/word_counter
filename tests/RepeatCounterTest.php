@@ -50,7 +50,7 @@
             $this->AssertEquals(4, $result);
         }
 
-        function test_PamGrier_Paragraph()
+        function test_stripCharacters_PamGrier_Paragraph()
         {
             $test_RepeatCounter = new RepeatCounter;
             $input_A = "character";
@@ -59,6 +59,18 @@
             $result = $test_RepeatCounter->countRepeats($input_A, $input_B);
 
             $this->AssertEquals(2, $result);
+        }
+
+        function test_multipleWords()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input_A = "hello, goodbye";
+            $input_B = "hello, goodbye, hello, goodbye";
+
+            $result = $test_RepeatCounter->countRepeats($input_A, $input_B);
+
+            $this->AssertEquals("error", $result);
+
         }
 
     }
