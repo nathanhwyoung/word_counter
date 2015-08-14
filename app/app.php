@@ -11,7 +11,12 @@
     $app->get("/", function() use ($app) {
         return $app['twig']->render('form.html.twig');
     });
-    
+
+    $app->get("/results", function() use ($app) {
+        $new_search = new RepeatCounter;
+        $result = $new_search->countRepeats($_GET['search_word'], $_GET['search_text']);
+        return $app['twig']->render('results.html.twig', array('result' => $result));
+    });
 
     return $app;
 ?>
