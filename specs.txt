@@ -45,3 +45,18 @@ OUTPUT
 
 DESCRIPTION
 This pair of input values is the most complex variation of the requirements.
+
+verify single word input
+
+BEHAVIOR
+Receives a paragraph with commas and periods. Removes those characters, so that
+the individual words are put into the array without them.
+
+INPUT
+"character", "That's what he was saying, the civil rights movement - judge me for my character, not how black my skin is, not how yellow my skin is, how short I am, how tall or fat or thin; It's by my character."
+
+OUTPUT
+"Your word appears two times"
+
+DESCRIPTION
+This pair of input values searches for two words, who both have either a comma or period after them. The test fails if they are not removed, and passes if they are removed.

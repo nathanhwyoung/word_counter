@@ -8,6 +8,9 @@
             $lower_search_word = strtolower($search_word);
             $lower_search_text = strtolower($search_text);
 
+            //remove periods and commas
+
+
             // convert search text to array
             $array_search_text = explode(" ", $lower_search_text);
 
