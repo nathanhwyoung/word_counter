@@ -72,3 +72,4 @@ OUTPUT
 "Please enter only one word"
 
 DESCRIPTION
+This I/O pair has two words, which is more than the first input will accept
