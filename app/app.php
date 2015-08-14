@@ -17,7 +17,9 @@
     $app->get("/results", function() use ($app) {
         $new_search = new RepeatCounter;
         $result = $new_search->countRepeats($_GET['search_word'], $_GET['search_text']);
-        return $app['twig']->render('results.html.twig', array('result' => $result));
+        if ($result != "error") {
+            return $app['twig']->render('results.html.twig', array('result' => $result));
+        } else return $app['twig']->render('error.html.twig');
     });
 
     return $app;
