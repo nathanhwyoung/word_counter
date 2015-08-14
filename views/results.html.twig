@@ -6,7 +6,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Your word appeared {{ result }} times.</h1>
+        {% if result == 1 %}
+        <p>Your word appeared {{ result }} time.</p>
+        {% else %}
+        <p>Your word appeared {{ result }} times.</p>
+        {% endif %}
     </div>
 </body>
 </html>
