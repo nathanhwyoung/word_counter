@@ -1,32 +1,27 @@
-# _{Application Name}_
+# _WORD COUNTER_
 
-##### _{Brief description of application}, {Date of current version}_
+##### _An application that receives two strings from the user - one to search for, and the other to search, 08/14/15_
 
-#### By _**{List of contributors}**_
+#### By _**Nathan Young**_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. Do you want other developers to use this code in their apps? Talk about things like that here in simple terms.}_
+_An application that receives two strings from the user - one to search for, and the other to search. The application receives a the first word and verifies that it is only one word. It receives a second string, splits it into an array, and then searches for the first word in the array. A counter variable is used to tally the number of times the word appears in the array._
 
 ## Setup
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Are there other applications this app depends on?}_
+* _Clone directory from "https://github.com/nhwilcox/snoop_dogg_simulator.git"_
+* _run "composer install" into the terminal from the main folder directory._
+* _run "php -S localhost:8000" from the web folder._
+* _navigate to localhost:8000 in browser._
 
 ## Technologies Used
 
-_{Tell me about the languages you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Made using PHP, HTML, Silex, Composer, Twig. Tests conducted with PHPUnit._
 
 ### Legal
 
-*{This is boilerplate legal language. Read through it, and if you like it, use it. There are other license agreements online, but you can generally copy and paste this.}*
-
-Copyright (c) 2015 **_{List of contribtors}_**
+Copyright (c) 2015 **_Nathan Young_**
 
 This software is licensed under the MIT license.
 
