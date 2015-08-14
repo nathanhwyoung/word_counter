@@ -1,0 +1,47 @@
+BEHAVIOR
+
+Receives two single character strings, both via user input. Searches the second
+string & counts how many times the  first string appears in it.
+
+INPUT
+"i", "i"
+
+OUTPUT
+"Your word appears one time"
+
+DESCRIPTION
+This specific input value is the simplest value a user can enter
+
+
+
+BEHAVIOR
+
+Receives two single word strings, both via user input. Searches the second
+string & counts how many times the  first string appears in it.
+
+INPUT
+"farm", "farm"
+
+OUTPUT
+"Your word appears one time"
+
+DESCRIPTION
+This pair of input values is slightly more complex than the first pair.
+
+
+
+BEHAVIOR
+Receives a single-word string, and a multi-word string, both via user input.
+Searches the second string and counts how many times the first string appears
+in it.
+
+INPUT
+"we", “We are confronted primarily with a moral issue… whether all Americans are
+to be afforded equal rights and equal opportunities, whether we are going to
+treat our fellow Americans as we want to be treated.”
+
+OUTPUT
+"Your word appears three times"
+
+DESCRIPTION
+This pair of input values is the most complex variation of the requirements.
